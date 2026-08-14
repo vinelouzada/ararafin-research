@@ -1,0 +1,292 @@
+Estou desenvolvendo um artigo científico chamado **AraraFin** e quero que você faça uma análise crítica completa do trabalho e dos feedbacks recebidos.
+
+## 1. Arquivos
+
+O conteúdo atual do artigo está na pasta:
+
+`artigo ararafin ultima submissao`
+
+Nessa pasta estão os arquivos do artigo, incluindo o conteúdo em LaTeX, referências, figuras e demais arquivos relevantes.
+
+Também existe o arquivo:
+
+`feedback-eniac-revisores.txt`
+
+Esse arquivo contém os comentários dos revisores da submissão anterior.
+
+### O que quero que você faça
+
+**Primeiro, leia e entenda completamente o artigo atual.**
+
+Não quero que você comece analisando os comentários dos revisores antes de entender o trabalho.
+
+Procure entender principalmente:
+
+* qual é o problema de pesquisa;
+* qual é a motivação;
+* qual é a contribuição científica;
+* quais são as perguntas/objetivos de pesquisa;
+* qual metodologia foi utilizada;
+* como o dataset foi construído;
+* como os dados foram tratados e avaliados;
+* quais modelos foram utilizados;
+* quais experimentos foram realizados;
+* quais métricas foram utilizadas;
+* quais são os resultados;
+* quais conclusões são realmente sustentadas pelos resultados;
+* quais são as limitações declaradas;
+* qual é a novidade/contribuição em relação a trabalhos existentes.
+
+Depois disso, leia cuidadosamente o `feedback-eniac-revisores.txt`.
+
+---
+
+# 2. Análise dos revisores
+
+Para **cada comentário de cada revisor**, faça uma análise individual.
+
+Para cada ponto, responda:
+
+1. **O que o revisor está pedindo/criticando?**
+2. **Qual é a gravidade do problema?**
+
+   * crítico;
+   * importante;
+   * moderado;
+   * menor;
+   * opinião/sugestão.
+3. **Você concorda com o revisor?**
+
+   * concordo;
+   * concordo parcialmente;
+   * não concordo.
+4. **Por quê?**
+5. **O artigo atual realmente possui uma lacuna nesse ponto?**
+6. **O problema pode ser resolvido apenas melhorando a explicação/texto/análise?**
+7. **É necessário fazer novos experimentos?**
+8. **É necessário alterar a metodologia?**
+9. **Isso aumenta significativamente o escopo do trabalho?**
+10. **Qual seria a menor alteração necessária para resolver adequadamente a crítica?**
+
+Quero que você diferencie claramente:
+
+> **"O artigo realmente possui um problema que precisa ser corrigido"**
+
+de
+
+> **"O revisor está sugerindo uma extensão interessante, mas que não é necessariamente necessária para validar a contribuição original."**
+
+Essa distinção é muito importante.
+
+Não quero simplesmente atender todos os pedidos dos revisores se isso transformar o artigo em outro projeto.
+
+---
+
+# 3. Objetivo principal da revisão
+
+Meu objetivo é **aumentar significativamente a chance de aprovação em uma próxima submissão**, mas sem descaracterizar o trabalho original.
+
+Eu **não quero aumentar desnecessariamente o escopo**.
+
+Ao propor mudanças, priorize nesta ordem:
+
+1. corrigir problemas que realmente comprometem a validade científica;
+2. eliminar ambiguidades;
+3. deixar metodologia e experimentos suficientemente claros e reproduzíveis;
+4. fortalecer a argumentação científica;
+5. corrigir problemas de análise estatística/metodológica;
+6. melhorar apresentação dos resultados;
+7. somente depois considerar novos experimentos ou extensões.
+
+Se uma crítica puder ser resolvida com uma explicação melhor, prefira isso a criar um experimento grande e desnecessário.
+
+Se um novo experimento for realmente necessário, explique **por que ele é necessário para sustentar a contribuição do artigo**.
+
+---
+
+# 4. Quero que você procure problemas que os revisores NÃO encontraram
+
+Além de analisar os comentários dos revisores, faça uma **revisão independente do artigo**.
+
+Procure problemas como:
+
+* afirmações que não são sustentadas pelos experimentos;
+* conclusões exageradas;
+* ausência de informações importantes para reprodução;
+* metodologia pouco clara;
+* inconsistências entre objetivo, metodologia, resultados e conclusão;
+* possíveis problemas de desenho experimental;
+* comparação inadequada entre modelos;
+* métricas insuficientes ou mal justificadas;
+* problemas estatísticos;
+* dataset insuficientemente caracterizado;
+* possíveis vieses;
+* data leakage;
+* problemas de divisão treino/validação/teste;
+* ausência de baselines importantes;
+* falta de ablation study quando realmente necessário;
+* falta de análise de erros;
+* limitações não discutidas;
+* referências importantes que aparentemente deveriam ser consideradas;
+* claims de novidade que precisam ser melhor sustentados;
+* qualquer ponto que um revisor provavelmente poderia questionar em uma próxima submissão.
+
+Não quero que você invente problemas apenas para encontrar problemas.
+
+Se algo estiver adequado, diga explicitamente que está adequado.
+
+---
+
+# 5. Questão específica sobre os modelos
+
+Existe uma questão importante que quero que você analise.
+
+Um dos modelos utilizados no trabalho foi **descontinuado** e ele apresenta um dos melhores resultados do meu experimento.
+
+Estou considerando incorporar o **Sabiazinho 4** como um modelo adicional.
+
+Quero que você avalie cuidadosamente as opções:
+
+### Opção A
+
+Manter os modelos e resultados atuais e apenas explicar que determinado modelo foi descontinuado.
+
+### Opção B
+
+Adicionar o Sabiazinho 4 como um novo experimento, mantendo os experimentos originais.
+
+### Opção C
+
+Substituir o modelo descontinuado pelo Sabiazinho 4.
+
+### Opção D
+
+Reestruturar completamente o conjunto de modelos avaliados.
+
+Para cada alternativa, analise:
+
+* impacto científico;
+* impacto no escopo;
+* esforço necessário;
+* risco de criar inconsistências com os experimentos existentes;
+* comparabilidade com os resultados anteriores;
+* impacto na contribuição do artigo;
+* impacto na reprodutibilidade;
+* risco de parecer que o trabalho está sendo alterado depois dos resultados;
+* qual opção você considera mais adequada.
+
+**Minha preferência inicial é não descartar o trabalho que já foi realizado simplesmente porque um modelo foi descontinuado.**
+
+Quero saber se é cientificamente defensável manter esse experimento e adicionar modelos mais atuais, ou se existe alguma razão forte para refazer toda a avaliação.
+
+Também quero saber se adicionar vários modelos seria um erro por aumentar demais o escopo.
+
+Não quero simplesmente adicionar modelos por adicionar.
+
+Quero que você avalie qual é o **conjunto mínimo de modelos necessário para responder adequadamente à pergunta científica do artigo**.
+
+---
+
+# 6. Não quero uma análise baseada apenas em opinião
+
+Sempre que possível, baseie sua análise no conteúdo real dos arquivos.
+
+Por exemplo, se você disser:
+
+> "O artigo não deixa claro como o dataset foi dividido."
+
+aponte exatamente onde isso acontece ou onde essa informação deveria estar.
+
+Se disser:
+
+> "O revisor está pedindo algo que extrapola o escopo."
+
+explique por que isso extrapola o objetivo original.
+
+Se disser:
+
+> "Esse experimento é necessário."
+
+explique qual hipótese ou ameaça à validade ele resolve.
+
+Não quero respostas genéricas como "seria interessante melhorar a metodologia".
+
+Quero saber **exatamente o que está faltando e como corrigir**.
+
+---
+
+# 7. Ao final, quero um plano de ação
+
+Depois de analisar tudo, monte um plano de ação priorizado.
+
+Classifique cada alteração como:
+
+### P0 — Obrigatório
+
+Problemas que podem comprometer a aprovação ou a validade científica.
+
+### P1 — Muito recomendado
+
+Melhorias importantes que aumentam significativamente a qualidade do artigo.
+
+### P2 — Recomendado
+
+Melhorias úteis, mas não essenciais.
+
+### P3 — Opcional
+
+Sugestões interessantes que podem aumentar o trabalho, mas provavelmente não justificam aumentar o escopo neste momento.
+
+Para cada item, informe:
+
+* problema;
+* origem (revisor ou sua própria análise);
+* solução proposta;
+* arquivos/seções que precisam ser alterados;
+* se exige novo experimento;
+* esforço estimado (baixo/médio/alto);
+* impacto esperado na qualidade do artigo.
+
+---
+
+# 8. Quero também uma decisão estratégica
+
+No final, responda objetivamente:
+
+### 1. O artigo atual possui uma contribuição científica defensável?
+
+### 2. Quais são hoje os 3 maiores riscos para uma nova submissão?
+
+### 3. Quais críticas dos revisores eu realmente deveria atender?
+
+### 4. Quais críticas podem ser respondidas por esclarecimentos/alterações no texto?
+
+### 5. Quais críticas você considera que estão propondo essencialmente um novo trabalho?
+
+### 6. Eu deveria adicionar o Sabiazinho 4?
+
+### 7. Eu deveria substituir o modelo descontinuado ou mantê-lo?
+
+### 8. Quantos modelos você considera adequado avaliar no total?
+
+### 9. É necessário refazer experimentos antigos ou posso complementar os experimentos existentes?
+
+### 10. Se você estivesse orientando este trabalho e precisasse maximizar a chance de aprovação sem aumentar excessivamente o escopo, qual seria sua estratégia?
+
+---
+
+## Regra importante
+
+**Não assuma que o revisor está necessariamente correto.**
+
+Analise criticamente cada comentário.
+
+Também não assuma que o artigo está correto apenas porque os experimentos foram realizados.
+
+Quero uma avaliação **independente, crítica e científica**, considerando tanto os pontos levantados pelos revisores quanto problemas que eles eventualmente não identificaram.
+
+Meu objetivo não é fazer o artigo ficar maior.
+
+Meu objetivo é fazer o artigo ficar **mais sólido, claro, defensável e difícil de ser rejeitado por problemas que poderiam ter sido corrigidos**.
+
+Pode apresentar toda a análise diretamente aqui no chat. Não altere os arquivos do projeto nesta primeira etapa.

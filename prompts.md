@@ -11,6 +11,7 @@ Os prompts são estruturados para retornar classificações no formato JSON, com
 - [Fundos de Investimento Imobiliário (FIIs)](#fiis)
 - [Ações (B3)](#ações)
 - [Renda Fixa](#renda-fixa)
+- [Prompt Genérico (Ablação)](#prompt-genérico-ablação)
 
 ---
 
@@ -188,5 +189,30 @@ Exemplo:
     "sentiment": "POSITIVO",
     "justify": "O aumento da taxa Selic e a queda da inflação favorecem o 
     desempenho dos títulos de renda fixa."
+}
+```
+
+---
+
+## Prompt Genérico (Ablação)
+
+Prompt sem especialização de domínio, utilizado na análise de ablação (Seção 4.3) para medir o efeito da segmentação por domínio. Não atribui papel de especialista nem critérios específicos de cada modalidade.
+
+```
+Você é um analista financeiro. Classifique o sentimento da notícia a seguir 
+sobre o mercado financeiro brasileiro em uma das categorias: POSITIVO, 
+NEGATIVO ou NEUTRO.
+
+POSITIVO = a notícia tende a ser favorável ao investidor.
+NEGATIVO = a notícia tende a ser desfavorável ao investidor.
+NEUTRO = impacto irrelevante ou equilibrado (efeitos positivos e negativos 
+se anulam).
+
+Classifique cada notícia individualmente e forneça uma breve justificativa.
+
+Exemplo de resposta:
+{
+    "sentiment": "POSITIVO",
+    "justify": "A notícia indica melhora nas condições do mercado."
 }
 ```
